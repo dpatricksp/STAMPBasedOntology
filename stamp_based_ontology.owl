@@ -1,0 +1,1990 @@
+<?xml version="1.0"?>
+<!-- Author: Daniel Patrick Pereira -->
+<!-- Email: dpatricksp@gmail.com -->
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://wwwww.semanticweb.org/patrick/ontologies/2020/03/stamp_based_ontology"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://wwwww.semanticweb.org/patrick/ontologies/2020/03/stamp_based_ontology">
+    <Prefix name="" IRI="http://wwwww.semanticweb.org/patrick/ontologies/2018/11/stamp_based_ontology_official_v3"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <ObjectProperty IRI="#isCausalFactorOf"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Situation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Consume"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Attack"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Minor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Disruption"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#InitiatingEvent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Authorization"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Awareness_and_Training"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Process"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ActiveAttack"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#_Eavesdropping"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Maintenance"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Malformed_operation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#STPASecElement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CausalFactor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Severity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Planning"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasElement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Major"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SystemMapping"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasRecommendation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasSecurityProperty"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ControlAlgorithm"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#_SystemModification"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#System_and_Services_Acquisition"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#InadequateFeedback"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Physical_and_Environmental_Protection"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ExternalInformation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MeasurementInaccuracy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BruteForce"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Personnel_Security"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Incident_Response"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Privacy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MissingExternalInformation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isElementOf"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PropertyDamage"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasCausalFactor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Hazard"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WrongExternalInformation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#_Controller"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#VeryHigh"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SafetyRecommendation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#_Sensor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Access_Control"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Vulnerability"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ComponentFailure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MaintenanceData"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Storage"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LevelOfThreat"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Recommendation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Moderate"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Event"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ProcessModel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SecurityProperty"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Weakness"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Actuator"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isAttackMechanismOf"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HazardControlAction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Partial_operation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MissingFeedback"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Function"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MalformedControlAction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Non-Repudiation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#_BruteForce"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Delayed_operation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#InappropriateControlAction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SystemModification"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#_DenialOfService"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Human"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sensor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ControlInput"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Configuration_Management"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ExtremelyLow"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Destruct"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Mission"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Communicate"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Program_Management"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Hazardous"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Operational"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MissingInput"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ProcessModelIssue"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OperationData"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Information"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Confidentiality"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#IncompleteProcessModel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#_ControlledProcess"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#InadequateControlAlgorithm"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#IncorrectProcessModel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Low"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UnacceptableLoss"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Mishap"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Entity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WrongInput"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isSecurityPropertyOf"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Purpose"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#_SystemMapping"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#_Spoofing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#_Actuator"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Authenticity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SampleScenario"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EnvironmentPolution"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#System_and_Information_Integrity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Integrity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Technical"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SensitiveData"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isRecommendationOf"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Media_Protection"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Goal"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Method"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Security_Assessment_and_Authorization"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PersonalData"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NoEffect"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Audit_and_Accountability"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ControlAction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Catastrophic"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MalformedFeedback"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DenialOfService"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#IneffectiveControlAction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#High"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Availability"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#_Disruption"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MissionLoss"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Scenario"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CommWithAnotherController"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasAttackMechanism"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MissingComm"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HumanInjury"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MalformedExternalInformation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Operation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Eavesdropping"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WrongComm"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UnauthorizedComm"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Management"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Asset"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Threat"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PassiveAttack"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Spoofing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Contingency_Planning"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MalformedInput"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FeedbackIssue"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SecurityMeasure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Identification_and_Authentication"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HumanLife"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ControlActionIssue"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#System_and_Communications_Protection"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#InconsistentProcessModel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Generate"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Risk_Assessment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Feedback"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MissingControlAction"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="#Attack"/>
+        <Class IRI="#Threat"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#CausalFactor"/>
+        <Class IRI="#Vulnerability"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#HazardControlAction"/>
+        <Class IRI="#InitiatingEvent"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Mishap"/>
+        <Class IRI="#UnacceptableLoss"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Vulnerability"/>
+        <Class IRI="#Weakness"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#_Actuator"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Scenario"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasCausalFactor"/>
+                <ObjectUnionOf>
+                    <Class IRI="#IneffectiveControlAction"/>
+                    <Class IRI="#MalformedControlAction"/>
+                    <Class IRI="#Malformed_operation"/>
+                    <Class IRI="#MissingControlAction"/>
+                    <Class IRI="#Partial_operation"/>
+                </ObjectUnionOf>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#_ControlledProcess"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Scenario"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasCausalFactor"/>
+                <ObjectUnionOf>
+                    <Class IRI="#ComponentFailure"/>
+                    <Class IRI="#MissingInput"/>
+                    <Class IRI="#WrongInput"/>
+                </ObjectUnionOf>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#_Controller"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Scenario"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasCausalFactor"/>
+                <ObjectUnionOf>
+                    <Class IRI="#ControlInput"/>
+                    <Class IRI="#InadequateControlAlgorithm"/>
+                    <Class IRI="#IncompleteProcessModel"/>
+                    <Class IRI="#InconsistentProcessModel"/>
+                    <Class IRI="#IncorrectProcessModel"/>
+                    <Class IRI="#MalformedExternalInformation"/>
+                    <Class IRI="#MalformedInput"/>
+                    <Class IRI="#MissingComm"/>
+                    <Class IRI="#MissingExternalInformation"/>
+                    <Class IRI="#ProcessModelIssue"/>
+                    <Class IRI="#UnauthorizedComm"/>
+                    <Class IRI="#WrongComm"/>
+                    <Class IRI="#WrongExternalInformation"/>
+                </ObjectUnionOf>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#_Eavesdropping"/>
+        <Class IRI="#_SystemMapping"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#_Sensor"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Scenario"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasCausalFactor"/>
+                <ObjectUnionOf>
+                    <Class IRI="#InadequateFeedback"/>
+                    <Class IRI="#MalformedFeedback"/>
+                    <Class IRI="#MeasurementInaccuracy"/>
+                    <Class IRI="#MissingFeedback"/>
+                </ObjectUnionOf>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="#Access_Control"/>
+        <Class IRI="#Technical"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ActiveAttack"/>
+        <Class IRI="#Attack"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Actuator"/>
+        <Class IRI="#STPASecElement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Audit_and_Accountability"/>
+        <Class IRI="#Technical"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Authenticity"/>
+        <Class IRI="#SecurityProperty"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Authorization"/>
+        <Class IRI="#SecurityProperty"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Availability"/>
+        <Class IRI="#SecurityProperty"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Awareness_and_Training"/>
+        <Class IRI="#Operational"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BruteForce"/>
+        <Class IRI="#ActiveAttack"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Catastrophic"/>
+        <Class IRI="#Severity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CommWithAnotherController"/>
+        <Class IRI="#CausalFactor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Communicate"/>
+        <Class IRI="#Information"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ComponentFailure"/>
+        <Class IRI="#CausalFactor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Confidentiality"/>
+        <Class IRI="#SecurityProperty"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Configuration_Management"/>
+        <Class IRI="#Operational"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Consume"/>
+        <Class IRI="#Information"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Contingency_Planning"/>
+        <Class IRI="#Operational"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ControlAction"/>
+        <Class IRI="#STPASecElement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ControlActionIssue"/>
+        <Class IRI="#CausalFactor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ControlAlgorithm"/>
+        <Class IRI="#STPASecElement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ControlInput"/>
+        <Class IRI="#CausalFactor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Delayed_operation"/>
+        <Class IRI="#Operation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DenialOfService"/>
+        <Class IRI="#ActiveAttack"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Destruct"/>
+        <Class IRI="#Information"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Disruption"/>
+        <Class IRI="#ActiveAttack"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Eavesdropping"/>
+        <Class IRI="#PassiveAttack"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Entity"/>
+        <Class IRI="#STPASecElement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EnvironmentPolution"/>
+        <Class IRI="#UnacceptableLoss"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ExternalInformation"/>
+        <Class IRI="#CausalFactor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ExtremelyLow"/>
+        <Class IRI="#LevelOfThreat"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Feedback"/>
+        <Class IRI="#STPASecElement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FeedbackIssue"/>
+        <Class IRI="#CausalFactor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Function"/>
+        <Class IRI="#Asset"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Generate"/>
+        <Class IRI="#Information"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Goal"/>
+        <Class IRI="#Mission"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hazard"/>
+        <Class IRI="#Situation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HazardControlAction"/>
+        <Class IRI="#STPASecElement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hazardous"/>
+        <Class IRI="#Severity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#High"/>
+        <Class IRI="#LevelOfThreat"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Human"/>
+        <Class IRI="#Asset"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HumanInjury"/>
+        <Class IRI="#UnacceptableLoss"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HumanLife"/>
+        <Class IRI="#UnacceptableLoss"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Identification_and_Authentication"/>
+        <Class IRI="#Technical"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#InadequateControlAlgorithm"/>
+        <Class IRI="#CausalFactor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#InadequateFeedback"/>
+        <Class IRI="#FeedbackIssue"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#InappropriateControlAction"/>
+        <Class IRI="#ControlActionIssue"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Incident_Response"/>
+        <Class IRI="#Operational"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#IncompleteProcessModel"/>
+        <Class IRI="#ProcessModelIssue"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#InconsistentProcessModel"/>
+        <Class IRI="#ProcessModelIssue"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#IncorrectProcessModel"/>
+        <Class IRI="#ProcessModelIssue"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#IneffectiveControlAction"/>
+        <Class IRI="#ControlActionIssue"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Information"/>
+        <Class IRI="#Asset"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#InitiatingEvent"/>
+        <Class IRI="#Situation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Integrity"/>
+        <Class IRI="#SecurityProperty"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Low"/>
+        <Class IRI="#LevelOfThreat"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Maintenance"/>
+        <Class IRI="#Operational"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MaintenanceData"/>
+        <Class IRI="#SensitiveData"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Major"/>
+        <Class IRI="#Severity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MalformedControlAction"/>
+        <Class IRI="#ControlActionIssue"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MalformedExternalInformation"/>
+        <Class IRI="#ExternalInformation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MalformedFeedback"/>
+        <Class IRI="#FeedbackIssue"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MalformedInput"/>
+        <Class IRI="#ControlInput"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Malformed_operation"/>
+        <Class IRI="#Operation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Management"/>
+        <Class IRI="#SecurityMeasure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MeasurementInaccuracy"/>
+        <Class IRI="#CausalFactor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Media_Protection"/>
+        <Class IRI="#Operational"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Method"/>
+        <Class IRI="#Mission"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Minor"/>
+        <Class IRI="#Severity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mishap"/>
+        <Class IRI="#Event"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MissingComm"/>
+        <Class IRI="#CommWithAnotherController"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MissingControlAction"/>
+        <Class IRI="#ControlActionIssue"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MissingExternalInformation"/>
+        <Class IRI="#ExternalInformation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MissingFeedback"/>
+        <Class IRI="#FeedbackIssue"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MissingInput"/>
+        <Class IRI="#ControlInput"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MissionLoss"/>
+        <Class IRI="#UnacceptableLoss"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Moderate"/>
+        <Class IRI="#LevelOfThreat"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NoEffect"/>
+        <Class IRI="#Severity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Non-Repudiation"/>
+        <Class IRI="#SecurityProperty"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Operation"/>
+        <Class IRI="#CausalFactor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OperationData"/>
+        <Class IRI="#SensitiveData"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Operational"/>
+        <Class IRI="#SecurityMeasure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Partial_operation"/>
+        <Class IRI="#Operation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PassiveAttack"/>
+        <Class IRI="#Attack"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PersonalData"/>
+        <Class IRI="#SensitiveData"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Personnel_Security"/>
+        <Class IRI="#Operational"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Physical_and_Environmental_Protection"/>
+        <Class IRI="#Operational"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Planning"/>
+        <Class IRI="#Management"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Privacy"/>
+        <Class IRI="#SecurityProperty"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Process"/>
+        <Class IRI="#Information"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ProcessModel"/>
+        <Class IRI="#STPASecElement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ProcessModelIssue"/>
+        <Class IRI="#CausalFactor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Program_Management"/>
+        <Class IRI="#Management"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PropertyDamage"/>
+        <Class IRI="#UnacceptableLoss"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Purpose"/>
+        <Class IRI="#Mission"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Risk_Assessment"/>
+        <Class IRI="#Management"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#STPASecElement"/>
+        <Class IRI="#Asset"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SafetyRecommendation"/>
+        <Class IRI="#Recommendation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SampleScenario"/>
+        <Class IRI="#Scenario"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Scenario"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasAttackMechanism"/>
+            <Class IRI="#Attack"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Scenario"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasCausalFactor"/>
+            <Class IRI="#CausalFactor"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Scenario"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasRecommendation"/>
+            <Class IRI="#Recommendation"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Scenario"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSecurityProperty"/>
+            <Class IRI="#SecurityProperty"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SecurityMeasure"/>
+        <Class IRI="#Recommendation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Security_Assessment_and_Authorization"/>
+        <Class IRI="#Management"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SensitiveData"/>
+        <Class IRI="#UnacceptableLoss"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sensor"/>
+        <Class IRI="#STPASecElement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Spoofing"/>
+        <Class IRI="#ActiveAttack"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Storage"/>
+        <Class IRI="#Information"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SystemMapping"/>
+        <Class IRI="#PassiveAttack"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SystemModification"/>
+        <Class IRI="#ActiveAttack"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#System_and_Communications_Protection"/>
+        <Class IRI="#Technical"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#System_and_Information_Integrity"/>
+        <Class IRI="#Operational"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#System_and_Services_Acquisition"/>
+        <Class IRI="#Management"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Technical"/>
+        <Class IRI="#SecurityMeasure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UnacceptableLoss"/>
+        <Class IRI="#Event"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UnauthorizedComm"/>
+        <Class IRI="#CommWithAnotherController"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#VeryHigh"/>
+        <Class IRI="#LevelOfThreat"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WrongComm"/>
+        <Class IRI="#CommWithAnotherController"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WrongExternalInformation"/>
+        <Class IRI="#ExternalInformation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WrongInput"/>
+        <Class IRI="#ControlInput"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#_BruteForce"/>
+        <Class IRI="#SampleScenario"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#_BruteForce"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasAttackMechanism"/>
+            <Class IRI="#BruteForce"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#_BruteForce"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasCausalFactor"/>
+            <Class IRI="#UnauthorizedComm"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#_BruteForce"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasRecommendation"/>
+            <Class IRI="#Access_Control"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#_BruteForce"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasRecommendation"/>
+            <Class IRI="#Identification_and_Authentication"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#_BruteForce"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasRecommendation"/>
+            <Class IRI="#Incident_Response"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#_BruteForce"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasRecommendation"/>
+            <Class IRI="#Media_Protection"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#_BruteForce"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasRecommendation"/>
+            <Class IRI="#Personnel_Security"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#_BruteForce"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasRecommendation"/>
+            <Class IRI="#System_and_Communications_Protection"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#_BruteForce"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSecurityProperty"/>
+            <Class IRI="#Authorization"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#_BruteForce"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSecurityProperty"/>
+            <Class IRI="#Confidentiality"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#_BruteForce"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSecurityProperty"/>
+            <Class IRI="#Privacy"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#_DenialOfService"/>
+        <Class IRI="#SampleScenario"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#_DenialOfService"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasAttackMechanism"/>
+            <Class IRI="#DenialOfService"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#_DenialOfService"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasCausalFactor"/>
+            <Class IRI="#Delayed_operation"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#_DenialOfService"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasCausalFactor"/>
+            <Class IRI="#InappropriateControlAction"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#_DenialOfService"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasCausalFactor"/>
+            <Class IRI="#MissingComm"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#_DenialOfService"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasCausalFactor"/>
+            <Class IRI="#MissingControlAction"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#_DenialOfService"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasCausalFactor"/>
+            <Class IRI="#MissingExternalInformation"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#_DenialOfService"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasCausalFactor"/>
+            <Class IRI="#MissingFeedback"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#_DenialOfService"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasCausalFactor"/>
+            <Class IRI="#MissingInput"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#_DenialOfService"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasRecommendation"/>
+            <Class IRI="#Access_Control"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#_DenialOfService"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasRecommendation"/>
+            <Class IRI="#Incident_Response"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#_DenialOfService"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasRecommendation"/>
+            <Class IRI="#Maintenance"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#_DenialOfService"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasRecommendation"/>
+            <Class IRI="#Planning"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#_DenialOfService"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasRecommendation"/>
+            <Class IRI="#Program_Management"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#_DenialOfService"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasRecommendation"/>
+            <Class IRI="#System_and_Communications_Protection"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#_DenialOfService"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSecurityProperty"/>
+            <Class IRI="#Availability"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#_Disruption"/>
+        <Class IRI="#SampleScenario"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#_Disruption"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasAttackMechanism"/>
+            <Class IRI="#Disruption"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#_Disruption"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasCausalFactor"/>
+            <Class IRI="#InadequateControlAlgorithm"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#_Disruption"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasCausalFactor"/>
+            <Class IRI="#IncompleteProcessModel"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#_Disruption"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasCausalFactor"/>
+            <Class IRI="#InconsistentProcessModel"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#_Disruption"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasCausalFactor"/>
+            <Class IRI="#IneffectiveControlAction"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#_Disruption"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasCausalFactor"/>
+            <Class IRI="#MeasurementInaccuracy"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#_Disruption"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasCausalFactor"/>
+            <Class IRI="#Partial_operation"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#_Disruption"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasRecommendation"/>
+            <Class IRI="#Contingency_Planning"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#_Disruption"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasRecommendation"/>
+            <Class IRI="#Identification_and_Authentication"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#_Disruption"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasRecommendation"/>
+            <Class IRI="#Incident_Response"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#_Disruption"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasRecommendation"/>
+            <Class IRI="#Maintenance"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#_Disruption"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasRecommendation"/>
+            <Class IRI="#Personnel_Security"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#_Disruption"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasRecommendation"/>
+            <Class IRI="#Physical_and_Environmental_Protection"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#_Disruption"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasRecommendation"/>
+            <Class IRI="#Planning"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#_Disruption"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasRecommendation"/>
+            <Class IRI="#Program_Management"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#_Disruption"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasRecommendation"/>
+            <Class IRI="#Risk_Assessment"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#_Disruption"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasRecommendation"/>
+            <Class IRI="#System_and_Communications_Protection"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#_Disruption"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasRecommendation"/>
+            <Class IRI="#System_and_Information_Integrity"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#_Disruption"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSecurityProperty"/>
+            <Class IRI="#Availability"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#_Eavesdropping"/>
+        <Class IRI="#SampleScenario"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#_Eavesdropping"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasAttackMechanism"/>
+            <Class IRI="#Eavesdropping"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#_Eavesdropping"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasCausalFactor"/>
+            <Class IRI="#UnauthorizedComm"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#_Eavesdropping"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasRecommendation"/>
+            <Class IRI="#Access_Control"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#_Eavesdropping"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasRecommendation"/>
+            <Class IRI="#Audit_and_Accountability"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#_Eavesdropping"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasRecommendation"/>
+            <Class IRI="#Identification_and_Authentication"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#_Eavesdropping"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasRecommendation"/>
+            <Class IRI="#Incident_Response"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#_Eavesdropping"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasRecommendation"/>
+            <Class IRI="#Media_Protection"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#_Eavesdropping"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasRecommendation"/>
+            <Class IRI="#Risk_Assessment"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#_Eavesdropping"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasRecommendation"/>
+            <Class IRI="#Security_Assessment_and_Authorization"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#_Eavesdropping"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasRecommendation"/>
+            <Class IRI="#System_and_Communications_Protection"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#_Eavesdropping"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSecurityProperty"/>
+            <Class IRI="#Authorization"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#_Eavesdropping"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSecurityProperty"/>
+            <Class IRI="#Confidentiality"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#_Eavesdropping"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSecurityProperty"/>
+            <Class IRI="#Privacy"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#_Spoofing"/>
+        <Class IRI="#SampleScenario"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#_Spoofing"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasAttackMechanism"/>
+            <Class IRI="#Spoofing"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#_Spoofing"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasCausalFactor"/>
+            <Class IRI="#InadequateFeedback"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#_Spoofing"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasCausalFactor"/>
+            <Class IRI="#MalformedControlAction"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#_Spoofing"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasCausalFactor"/>
+            <Class IRI="#MalformedExternalInformation"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#_Spoofing"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasCausalFactor"/>
+            <Class IRI="#MalformedFeedback"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#_Spoofing"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasCausalFactor"/>
+            <Class IRI="#MalformedInput"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#_Spoofing"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasCausalFactor"/>
+            <Class IRI="#Malformed_operation"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#_Spoofing"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasCausalFactor"/>
+            <Class IRI="#UnauthorizedComm"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#_Spoofing"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasCausalFactor"/>
+            <Class IRI="#WrongComm"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#_Spoofing"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasCausalFactor"/>
+            <Class IRI="#WrongExternalInformation"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#_Spoofing"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasCausalFactor"/>
+            <Class IRI="#WrongInput"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#_Spoofing"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasRecommendation"/>
+            <Class IRI="#Access_Control"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#_Spoofing"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasRecommendation"/>
+            <Class IRI="#Awareness_and_Training"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#_Spoofing"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasRecommendation"/>
+            <Class IRI="#Identification_and_Authentication"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#_Spoofing"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasRecommendation"/>
+            <Class IRI="#Incident_Response"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#_Spoofing"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasRecommendation"/>
+            <Class IRI="#Maintenance"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#_Spoofing"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasRecommendation"/>
+            <Class IRI="#Personnel_Security"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#_Spoofing"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasRecommendation"/>
+            <Class IRI="#Planning"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#_Spoofing"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasRecommendation"/>
+            <Class IRI="#Program_Management"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#_Spoofing"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasRecommendation"/>
+            <Class IRI="#System_and_Communications_Protection"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#_Spoofing"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasRecommendation"/>
+            <Class IRI="#System_and_Information_Integrity"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#_Spoofing"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasRecommendation"/>
+            <Class IRI="#System_and_Services_Acquisition"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#_Spoofing"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSecurityProperty"/>
+            <Class IRI="#Authenticity"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#_SystemMapping"/>
+        <Class IRI="#SampleScenario"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#_SystemModification"/>
+        <Class IRI="#SampleScenario"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#_SystemModification"/>
+        <Class IRI="#System_and_Services_Acquisition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#_SystemModification"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasAttackMechanism"/>
+            <Class IRI="#SystemModification"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#_SystemModification"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasCausalFactor"/>
+            <Class IRI="#InconsistentProcessModel"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#_SystemModification"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasCausalFactor"/>
+            <Class IRI="#IncorrectProcessModel"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#_SystemModification"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasCausalFactor"/>
+            <Class IRI="#MeasurementInaccuracy"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#_SystemModification"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasCausalFactor"/>
+            <Class IRI="#WrongComm"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#_SystemModification"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasCausalFactor"/>
+            <Class IRI="#WrongExternalInformation"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#_SystemModification"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasCausalFactor"/>
+            <Class IRI="#WrongInput"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#_SystemModification"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasRecommendation"/>
+            <Class IRI="#Access_Control"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#_SystemModification"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasRecommendation"/>
+            <Class IRI="#Configuration_Management"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#_SystemModification"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasRecommendation"/>
+            <Class IRI="#Identification_and_Authentication"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#_SystemModification"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasRecommendation"/>
+            <Class IRI="#Incident_Response"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#_SystemModification"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasRecommendation"/>
+            <Class IRI="#Maintenance"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#_SystemModification"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasRecommendation"/>
+            <Class IRI="#System_and_Information_Integrity"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#_SystemModification"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSecurityProperty"/>
+            <Class IRI="#Authenticity"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#_SystemModification"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSecurityProperty"/>
+            <Class IRI="#Confidentiality"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#_SystemModification"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSecurityProperty"/>
+            <Class IRI="#Integrity"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#Access_Control"/>
+        <Class IRI="#Audit_and_Accountability"/>
+        <Class IRI="#Identification_and_Authentication"/>
+        <Class IRI="#System_and_Communications_Protection"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ActiveAttack"/>
+        <Class IRI="#PassiveAttack"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Actuator"/>
+        <Class IRI="#ControlAction"/>
+        <Class IRI="#ControlAlgorithm"/>
+        <Class IRI="#Entity"/>
+        <Class IRI="#Feedback"/>
+        <Class IRI="#ProcessModel"/>
+        <Class IRI="#Sensor"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Asset"/>
+        <Class IRI="#Event"/>
+        <Class IRI="#LevelOfThreat"/>
+        <Class IRI="#Mission"/>
+        <Class IRI="#Recommendation"/>
+        <Class IRI="#Scenario"/>
+        <Class IRI="#SecurityProperty"/>
+        <Class IRI="#Severity"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Asset"/>
+        <Class IRI="#Event"/>
+        <Class IRI="#LevelOfThreat"/>
+        <Class IRI="#Recommendation"/>
+        <Class IRI="#Scenario"/>
+        <Class IRI="#SecurityProperty"/>
+        <Class IRI="#Severity"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Attack"/>
+        <Class IRI="#CausalFactor"/>
+        <Class IRI="#Scenario"/>
+        <Class IRI="#Severity"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Awareness_and_Training"/>
+        <Class IRI="#Configuration_Management"/>
+        <Class IRI="#Contingency_Planning"/>
+        <Class IRI="#Incident_Response"/>
+        <Class IRI="#Maintenance"/>
+        <Class IRI="#Media_Protection"/>
+        <Class IRI="#Personnel_Security"/>
+        <Class IRI="#Physical_and_Environmental_Protection"/>
+        <Class IRI="#System_and_Information_Integrity"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Communicate"/>
+        <Class IRI="#Consume"/>
+        <Class IRI="#Destruct"/>
+        <Class IRI="#Generate"/>
+        <Class IRI="#Process"/>
+        <Class IRI="#Storage"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Delayed_operation"/>
+        <Class IRI="#Malformed_operation"/>
+        <Class IRI="#Partial_operation"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#EnvironmentPolution"/>
+        <Class IRI="#HumanInjury"/>
+        <Class IRI="#HumanLife"/>
+        <Class IRI="#MissionLoss"/>
+        <Class IRI="#PropertyDamage"/>
+        <Class IRI="#SensitiveData"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Function"/>
+        <Class IRI="#Human"/>
+        <Class IRI="#Information"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Goal"/>
+        <Class IRI="#Method"/>
+        <Class IRI="#Purpose"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#MaintenanceData"/>
+        <Class IRI="#OperationData"/>
+        <Class IRI="#PersonalData"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Management"/>
+        <Class IRI="#Operational"/>
+        <Class IRI="#Technical"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Mishap"/>
+        <Class IRI="#UnacceptableLoss"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Planning"/>
+        <Class IRI="#Program_Management"/>
+        <Class IRI="#Risk_Assessment"/>
+        <Class IRI="#Security_Assessment_and_Authorization"/>
+        <Class IRI="#System_and_Services_Acquisition"/>
+    </DisjointClasses>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasAttackMechanism"/>
+        <ObjectProperty IRI="#hasElement"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasCausalFactor"/>
+        <ObjectProperty IRI="#hasElement"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasRecommendation"/>
+        <ObjectProperty IRI="#hasElement"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasSecurityProperty"/>
+        <ObjectProperty IRI="#hasElement"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isAttackMechanismOf"/>
+        <ObjectProperty IRI="#hasElement"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isCausalFactorOf"/>
+        <ObjectProperty IRI="#hasElement"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isRecommendationOf"/>
+        <ObjectProperty IRI="#hasElement"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isSecurityPropertyOf"/>
+        <ObjectProperty IRI="#hasElement"/>
+    </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasAttackMechanism"/>
+        <ObjectProperty IRI="#isAttackMechanismOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasCausalFactor"/>
+        <ObjectProperty IRI="#isCausalFactorOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasElement"/>
+        <ObjectProperty IRI="#isElementOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasRecommendation"/>
+        <ObjectProperty IRI="#isRecommendationOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasSecurityProperty"/>
+        <ObjectProperty IRI="#isSecurityPropertyOf"/>
+    </InverseObjectProperties>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#hasElement"/>
+    </TransitiveObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#isElementOf"/>
+    </TransitiveObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasAttackMechanism"/>
+        <Class IRI="#Scenario"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasCausalFactor"/>
+        <Class IRI="#Scenario"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isAttackMechanismOf"/>
+        <Class IRI="#Attack"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isCausalFactorOf"/>
+        <Class IRI="#CausalFactor"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasAttackMechanism"/>
+        <Class IRI="#Attack"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasCausalFactor"/>
+        <Class IRI="#CausalFactor"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isAttackMechanismOf"/>
+        <Class IRI="#Scenario"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isCausalFactorOf"/>
+        <Class IRI="#Scenario"/>
+    </ObjectPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Asset</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The logical and physical resources of the aircraft which contribute to the airworthiness of the aircraft, including functions, systems, items, data, interfaces, processes and information (ED202A/DO326A).
+
+A useful or valuable thing. (OED) - (Herzog et. al., 2007)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Information</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Different from what was present in (Zhou et. al. , 2017) for information (e.g. In Transit, and Stationary); here we describe distict possibilities such as communicate, consume, destruct, generate, process, storage - this is the Information Life Cycle proposed by Young, 20XX.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Mission</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Mission comprises purposes, methods, and goals to carry out specific objectives. It describes what the system is supposed to do, defining and framing the problem.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Threat</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A synonym for threat. Some publications use threat for high-level threats like &quot;act of human error or failure&quot; and attack for more specific threats like &quot;virus&quot;. But the distinction is arbitrary as illustrated in Whitford, Mattord, Principles of Information Security, 2nd Edition, 2005. p. 126: Table 4.3 describes threats to information security, one threat being &apos;deliberate software *attacks*&apos;.</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+
